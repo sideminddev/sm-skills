@@ -1,14 +1,15 @@
 ---
 name: git-operations
-description: >
-  Use this skill whenever an agent needs to interact with Git repositories on GitHub.
-  Triggers include: cloning a repository, creating branches, committing and pushing changes,
-  opening pull requests, creating new repositories in an organization, or any task that
-  involves reading or writing to a GitHub repo. Also use when the agent needs to determine
-  which organization/repository to operate on from project context, or when it must ask
-  the user (via issue comment) for the target repo. Always use this skill before running
-  any git or GitHub CLI command — it defines the correct auth patterns, context discovery,
-  and safe branching conventions required for paperclipAI agents.
+description: Use this skill whenever an agent needs to interact with Git repositories on GitHub. Triggers include cloning a repository, creating branches, committing and pushing changes, opening pull requests, and creating new repositories in an organization. Also use when the agent needs to determine which organization/repository to operate on from project context, or when it must ask the user (via issue comment) for the target repo. Always use this skill before running any git or GitHub CLI command.
+source: sideminddev
+tags:
+  - git
+  - github
+  - version-control
+  - pull-request
+  - repository
+tools:
+  - paperclip
 ---
 
 # Git Operations Skill
@@ -326,7 +327,9 @@ gh pr create \
 
 ---
 
+---
+
 ## Reference files
 
-- `references/github-api.md` — Full GitHub REST API reference for common operations
-- `references/git-cheatsheet.md` — Quick git command reference
+- `references/github-api.md` — Full GitHub REST API reference for common operations (repositories, branches, PRs, issues, file contents, actions, pagination)
+- `references/git-cheatsheet.md` — Quick git command reference (status, branching, staging, remotes, rebase, undo)
