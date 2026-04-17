@@ -112,6 +112,8 @@ git clone --branch main --single-branch \
 
 ## 4. Branching Conventions
 
+> 📖 Para referência rápida de comandos git (status, rebase, undo, stash, remotes), leia `references/git-cheatsheet.md`.
+
 **Never commit directly to `main` or `master`.** Always create a feature branch.
 
 ```bash
@@ -166,6 +168,8 @@ git push -u origin "$BRANCH_NAME"
 ---
 
 ## 7. Opening a Pull Request
+
+> 📖 Para referência completa de todos os endpoints da API do GitHub (PRs, branches, issues, conteúdo de arquivos, actions), leia `references/github-api.md` antes de fazer chamadas à API REST diretamente.
 
 Use the GitHub CLI:
 
@@ -331,5 +335,7 @@ gh pr create \
 
 ## Reference files
 
-- `references/github-api.md` — Full GitHub REST API reference for common operations (repositories, branches, PRs, issues, file contents, actions, pagination)
-- `references/git-cheatsheet.md` — Quick git command reference (status, branching, staging, remotes, rebase, undo)
+Leia os arquivos abaixo quando precisar de detalhes adicionais:
+
+- `references/github-api.md` — **Leia quando for usar a API REST do GitHub diretamente** (criar repo, listar PRs, postar comentários, ler/escrever arquivos via API, verificar rate limit)
+- `references/git-cheatsheet.md` — **Leia quando precisar de comandos git específicos** (rebase, stash, undo, inspecionar histórico, resolver conflitos)
