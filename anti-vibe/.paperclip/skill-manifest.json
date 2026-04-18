@@ -1,0 +1,194 @@
+{
+  "version": "1.0",
+  "name": "psters-workflow",
+  "description": "Anti-vibe-coding workflow skills for structured development with PaperclipAI",
+  "author": "Psters AI Workflow",
+  "source": "https://github.com/sideminddev/sm-skills",
+  "skills": [
+    {
+      "name": "pwf-plan",
+      "category": "workflow",
+      "description": "Create detailed, execution-ready implementation plans"
+    },
+    {
+      "name": "pwf-work",
+      "category": "workflow",
+      "description": "Execute free-form work with full documentation"
+    },
+    {
+      "name": "pwf-work-plan",
+      "category": "workflow",
+      "description": "Execute planned phases from docs/plans/"
+    },
+    {
+      "name": "pwf-work-light",
+      "category": "workflow",
+      "description": "Execute trivial work with minimal overhead"
+    },
+    {
+      "name": "pwf-work-tdd",
+      "category": "workflow",
+      "description": "Execute test-driven development cycles"
+    },
+    {
+      "name": "pwf-review",
+      "category": "quality",
+      "description": "Run heavy multi-agent code review"
+    },
+    {
+      "name": "pwf-brainstorm",
+      "category": "planning",
+      "description": "Explore features, scope, and architecture options"
+    },
+    {
+      "name": "pwf-setup",
+      "category": "setup",
+      "description": "Initialize or repair workflow docs skeleton"
+    },
+    {
+      "name": "pwf-doc",
+      "category": "documentation",
+      "description": "Generate or update canonical system documentation"
+    },
+    {
+      "name": "pwf-doc-foundation",
+      "category": "documentation",
+      "description": "Create or refresh baseline project docs"
+    },
+    {
+      "name": "systematic-debugging",
+      "category": "quality",
+      "description": "4-phase root-cause-first debugging process"
+    },
+    {
+      "name": "using-psters-workflow",
+      "category": "meta",
+      "description": "Meta-skill for selecting the right workflow skill"
+    },
+    {
+      "name": "commit-changes",
+      "category": "git",
+      "description": "Commit orchestration with ticket-aware grouping"
+    },
+    {
+      "name": "verification-before-completion",
+      "category": "quality",
+      "description": "Verification gate before completion claims"
+    },
+    {
+      "name": "fast-validation",
+      "category": "quality",
+      "description": "Fast TypeScript validation without full builds"
+    },
+    {
+      "name": "git-worktree",
+      "category": "git",
+      "description": "Manage isolated parallel Git worktrees"
+    },
+    {
+      "name": "orchestrating-multi-agents",
+      "category": "workflow",
+      "description": "Parallel subagent orchestration with guardrails"
+    },
+    {
+      "name": "nestjs-conventions",
+      "category": "conventions",
+      "description": "NestJS framework conventions and patterns"
+    },
+    {
+      "name": "nextjs-conventions",
+      "category": "conventions",
+      "description": "Next.js framework conventions and patterns"
+    },
+    {
+      "name": "angular-conventions",
+      "category": "conventions",
+      "description": "Angular framework conventions and patterns"
+    },
+    {
+      "name": "deploy-lambda",
+      "category": "deployment",
+      "description": "AWS Lambda deployment workflow"
+    },
+    {
+      "name": "docs-baseline-loading",
+      "category": "documentation",
+      "description": "Load and enforce mandatory project documentation"
+    },
+    {
+      "name": "docs-maintenance-after-work",
+      "category": "documentation",
+      "description": "Maintain docs after implementation work"
+    },
+    {
+      "name": "finishing-a-development-branch",
+      "category": "git",
+      "description": "Close branch/worktree with disciplined decision flow"
+    }
+  ],
+  "agents": {
+    "research": [
+      "repo-research-analyst",
+      "learnings-researcher",
+      "migration-impact-planner",
+      "spec-flow-analyzer",
+      "best-practices-researcher",
+      "framework-docs-researcher",
+      "git-history-analyzer",
+      "integration-impact-analyst",
+      "api-contract-designer",
+      "data-model-designer",
+      "edge-case-hunter",
+      "ux-consistency-reviewer",
+      "po-analyst",
+      "lambda-pipeline-analyst"
+    ],
+    "review": [
+      "architecture-strategist",
+      "code-simplicity-reviewer",
+      "security-sentinel",
+      "performance-oracle",
+      "nestjs-reviewer",
+      "nextjs-reviewer",
+      "angular-reviewer",
+      "lambda-reviewer",
+      "data-integrity-guardian",
+      "schema-drift-detector",
+      "kieran-typescript-reviewer",
+      "julik-frontend-races-reviewer",
+      "agent-native-reviewer",
+      "deployment-verification-agent",
+      "pattern-recognition-specialist"
+    ],
+    "workflow": [
+      "spec-flow-analyzer",
+      "plan-document-reviewer",
+      "bug-reproduction-validator"
+    ]
+  },
+  "rules": [
+    "operational-guardrails",
+    "commits",
+    "prisma-migrations",
+    "typeorm-migrations"
+  ],
+  "presets": [
+    "general",
+    "nestjs-api",
+    "nextjs-prisma",
+    "angular-feature",
+    "lambda-pipeline",
+    "bugfix-hotfix"
+  ],
+  "paperclip": {
+    "minVersion": "0.1.0",
+    "adapterSupport": ["opencode_local"],
+    "model": "MiniMax",
+    "features": {
+      "skillsInjection": true,
+      "agentReferences": true,
+      "parallelExecution": true,
+      "heartbeatProtocol": true
+    }
+  }
+}
